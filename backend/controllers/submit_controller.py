@@ -73,7 +73,7 @@ def send_report_email(to_email: str, predavanje_id: int, db: Session):
     smtp_server = "smtp.mailmug.net"
     port = 2525
     login = "wrmgwulpzclc8xpz"
-    password = "asw954cajasb9jis"
+   
     
     try:
         server = SMTP(smtp_server, port)

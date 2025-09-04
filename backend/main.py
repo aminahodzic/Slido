@@ -97,7 +97,7 @@ def start_application():
 #    port=2525
  #   smtp_server="smtp.mailmug.net"
   #  login="wrmgwulpzclc8xpz"
-   # password="asw954cajasb9jis"
+
    # sender_email="publika@slido.com"
    # to_email="publika2@slido.com"
    # message=MIMEMultipart('alternative')
