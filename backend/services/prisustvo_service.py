@@ -29,3 +29,4 @@ def delete_prisustvo(db: Session, prisustvo_id: int) -> None:
     if not db_prisustvo:
         raise HTTPException(status_code=404, detail="Prisustvo nije pronađeno")
     prisustvo_repository.delete_prisustvo(db, db_prisustvo)
+  

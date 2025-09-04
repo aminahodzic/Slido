@@ -17,14 +17,14 @@ def kreiraj_pitanje(db: Session, data: PitanjeCreate, predavanje_id: int) -> Pit
     - 'postavljeno' inače
     Također ažurira broj postavljenih pitanja u predavanju.
     """
-
     # 1. Provjera zabranjenih riječi
     if not filtriraj_pitanje(db, data.sadrzaj):
         status = PitanjeStatus.skriveno
     else:
         status = PitanjeStatus.postavljeno
 
-    # 2. DEBUG: ispis prije kreiranja pitanja
+    # 2. DEBUG: ispis prije kreiranja pitanja     
+    
     print("=== DEBUG: Prije create_pitanje ===")
     print("Sadržaj pitanja:", data.sadrzaj)
     print("Status pitanja:", status)

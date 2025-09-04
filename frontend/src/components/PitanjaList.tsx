@@ -20,7 +20,7 @@ const PitanjaList: React.FC<PitanjaListProps> = ({ predavanjeId, predavacId }) =
 
   const fetchPitanja = async () => {
     try {
-      console.log("Fetching pitanja i odgovore...");
+      console.log("Fetching pitanja i odgovore...");    
 
       const [pitanjaRes, odgovoriRes] = await Promise.all([
         fetch(`/pitanja/public/${predavanjeId}`),

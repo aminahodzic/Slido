@@ -19,3 +19,4 @@ def posalji_pozivnicu(db: Session, data: PozivnicaGostCreate, predavanje_id: int
         server.sendmail(msg["From"], [pozivnica.email], msg.as_string())
 
     return pozivnica
+ 

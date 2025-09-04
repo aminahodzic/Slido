@@ -121,11 +121,8 @@ def delete_pitanje(pitanje_id: int, db: Session = Depends(get_db)):
     return {"detail": "Pitanje obrisano"}
 
 
-<<<<<<< HEAD
+
 @router.put("/sakrij/{pitanje_id}")
-=======
-@router.patch("/sakrij/{pitanje_id}")
->>>>>>> 2a45368ea6046c4a66b77bcd2e8bd76ae5f45fb1
 def sakrij_pitanje(pitanje_id: int, db: Session = Depends(get_db)):
     pitanje = db.get(Pitanje, pitanje_id)
     if not pitanje:
